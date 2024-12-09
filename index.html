@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="team">
+            <h3>HOME</h3>
+            <div class="score">
+                <p id="score-home">0</p>
+            </div>
+            <div class="press__container">
+            <button data-team="home" data-points="1" onclick="increment(1)">+1</button>
+            <button data-team="home" data-points="2" onclick="increment(2)">+2</button>
+            <button data-team="home" data-points="3" onclick="increment(3)">+3</button>
+            </div>
+        </div>
+        <div class="team">
+            <h3>GUEST</h3>
+            <div class="score">
+                <p id="score-away">0</p>
+            </div>
+            <div class="press__container">
+            <button data-team="away" data-points="1" onclick="incrementA(1)">+1</button>
+            <button data-team="away" data-points="2" onclick="incrementA(2)">+2</button>
+            <button data-team="away" data-points="3" onclick="incrementA(3)">+3</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
